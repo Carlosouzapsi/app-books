@@ -1,0 +1,43 @@
+# Estrutura de Pastas do Projeto
+
+## Links Úteis
+
+- **Documento Google:** [https://docs.google.com/document/d/1My-yA2IjW1b7ALPx0tAu4--jgrszTzgqPrTmVqmf04s/edit?tab=t.0](https://docs.google.com/document/d/1My-yA2IjW1b7ALPx0tAu4--jgrszTzgqPrTmVqmf04s/edit?tab=t.0)
+- **Link Canva:** [https://g.co/gemini/share/578e0e006436](https://g.co/gemini/share/578e0e006436)
+
+## Estrutura de Diretórios
+
+```
+src/
+├── assets/             # Imagens, fontes, ícones, etc.
+│   ├── fonts/
+│   ├── images/
+│   └── icons/
+├── components/         # Componentes reutilizáveis e genéricos (ex: Button, Card, Header).
+├── constants/          # Constantes da aplicação (ex: API_URL, cores, tamanhos).
+├── context/            # Contextos da aplicação (se usar Context API para gerenciamento de estado).
+├── hooks/              # Hooks customizados para reutilização de lógica.
+├── navigation/         # Configuração de navegação (React Navigation).
+├── screens/            # Telas da aplicação (uma pasta para cada tela).
+│   ├── HomeScreen/
+│   │   ├── index.js     # Componente principal da tela.
+│   │   └── styles.js    # Estilos da tela.
+│   └── ProfileScreen/
+│       ├── index.js
+│       └── styles.js
+├── services/           # Serviços de API, autenticação, armazenamento local, etc.
+│   ├── api.js
+│   ├── authService.js
+│   └── storageService.js
+├── utils/              # Funções utilitárias e helpers.
+└── App.js              # Componente principal da aplicação.
+```
+
+## Criação do Projeto Base
+
+```bash
+npx create-expo-app@latest --template
+```
+
+- **Escolha um template:** › Blank (Bare)
+- **Qual o nome do seu aplicativo?** … test
